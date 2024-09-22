@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>JavaScript String Method</h2>
+        <script>
+        var str="ViViAN"
+        document.write(str.toUpperCase());
+        document.write("<br>")
+        document.write(str.toLowerCase());
+        document.write("<br>")
+        document.write(str.startsWith('V'))
+    </script>
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+    <script>
+        var fruits = ["Apple", "Banana", "Cashew", "Berry"];
+        var text = "";
+        var i;
+        for (i = 0; i <fruits.length; i++) {
+            text += fruits[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    <h2>Switch in JavaScript</h2>
+    <p id="demo"></p>
+    <script>
+        var day;
+        switch (new Date().getDay()){
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is" + day;
+    </script>
+</body>
+</html>
